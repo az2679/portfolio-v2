@@ -1,0 +1,677 @@
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-family: 'Roboto', regular;
+  letter-spacing: 0.1em;
+  color: #323841;
+  font-size: 0.94em;
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2vw;
+  color: #323841;
+  letter-spacing: 0.1em;
+  margin-bottom: 3vh;
+  margin-left:-0.25vw;
+}
+
+img {
+  object-fit: cover;
+  width:100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+button {
+  font-size: 2vw;
+  color: #2c4368;
+  background: none;
+  border: none;
+  z-index: 5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#site_wrapper {
+  background-color: #F1EFED;
+  height: 1700px;
+  width: 100vw;
+}
+
+#threed_wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #F1EFED;
+  height: 1132px;
+  width: 100%;
+  /* border: 2px solid; */
+}
+
+#filler_wrapper {
+  background-color: #F1EFED;
+  height: 146px;
+  /* border: 2px solid */
+}
+
+.scroll_slide {
+  color: "white";
+  position: "absolute";
+  width: "50vw";
+  padding-left: "20px";
+  z-index: "50";
+}
+
+
+/* 
+
+Nav Bar
+
+*/
+
+#navBar_wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  width: 100vw;
+  height: 17vh;
+  z-index: 50;
+  /* border: 2px solid; */
+}
+
+#navHeadContainer {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: 0vh 4vw;
+  /* border: 2px solid; */
+}
+
+.head {
+  font-family: 'Roboto', regular;
+  font-size: 1.8vw;
+  color: #323841;
+  letter-spacing: 0.125em;
+  margin-bottom: 0em;
+}
+
+.subhead {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.125vw;
+  color: #323841;
+  letter-spacing: 0em;
+  margin-top: 0;
+}
+
+#navTabsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0vh 10vw;
+  transition: all 0.3s ease-in-out;
+  perspective: 1000px;
+  /* border: 2px solid; */
+}
+
+.navItem {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2vw;
+  color: #323841;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.navItem:not(.active):hover {
+  transform: scale(1.05);
+}
+
+.navItem.active {
+  transform: scale(1.1);
+  color: #848382;
+  position: relative;
+}
+
+.navItem.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.4em; 
+  height: 0.165em;
+  background-color: #848382; 
+  border-radius: 2px;
+}
+
+#navContactContainer {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 0vh 4.5vw;
+  /* border: 2px solid; */
+}
+
+.navIcon {
+  color: #000000;
+  font-size: 1.125vw;
+  padding: 0vh 0.75vw;
+  scale: 150%;
+}
+
+/* 
+
+Home Page
+
+*/
+
+#home_wrapper {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0.5vw;
+  width: 100vw;
+  height: 83vh;
+  z-index: 2;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#home_wrapper.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#home_wrapper.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.blurb {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: #F1EFED;
+  padding: 3vh 4vw;
+  width: 22vw;
+  height: 75vh;
+  margin-left: auto;
+  margin-right: 10vw; 
+  margin-top: 20vh; 
+  /* border: 2px solid; */
+}
+
+.introBlock {
+  position: absolute;
+  line-height: 1.85;
+  width: 17vw;
+  /* border: 2px solid; */
+}
+
+/* 
+
+Project Page
+
+*/
+
+#project_wrapper {
+  position: absolute;
+  top: 100vh;
+  left: 4vw;
+  width: 92vw;
+  height: 80vh;
+  /* border: 2px solid red; */
+}
+
+
+.projectContainer{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 48vw;
+  width: 45vw;
+  height: 80vh;
+  z-index: 2;
+  /* border: 2px solid red; */
+}
+
+.projectImageContainer {
+  position: relative;
+  height: 68vh;
+  width: 40vw;
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+  border: 2px solid #323841;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectImage {
+  width: 95%;
+  height: 95%;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.projectDescriptionContainer {
+  position: absolute;
+  height: 12vh;
+  width: 40vw;
+  top: 67vh;
+  left: 6vw;
+  background-color: #323841;
+  border-radius: 20px;
+  max-height: 18vh;
+  z-index: 1;
+}
+
+.projectDescription {
+  color: #F1EFED;
+  padding: 2vh 2vw;
+  font-size: 0.85vw;
+  letter-spacing: 0.1em;
+}
+
+#canvas_wrapper {
+  /* position: absolute; */
+  position: -webkit-sticky;
+  position: sticky;
+  /* top: 120vh; */
+  top: 20vh;
+  left: 3.5vw;
+  width: 92vw;
+  /* width: 48vw; */
+  height: 75vh;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.boundingBoxContainer {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  /* border: 3px solid red; */
+}
+
+.projectTagContainer {
+  width: 20vw;
+  transition: opacity 0.3s, visibility 0.3s;
+  /* border: 2px solid red; */
+}
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.goButton {
+  position:absolute;
+  top: 57vh;
+  left:40.2vw;
+}
+
+.drag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* 
+
+Case Study Page
+
+*/
+
+#caseStudy_wrapper{
+  display: flex;
+  flex-direction: row;
+  background-color: #F1EFED;
+  width: 100vw;
+  /* border:2px solid red; */
+}
+
+.caseImageContainer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width:45vw;
+  height:80vh;
+  padding: 10vh 5vw;
+  /* border: 2px solid red; */
+}
+
+.caseDescriptionContainer{
+  position: absolute;
+  height: 15vh;
+  width: 41vw;
+  top: 80vh;
+  left: 8.5vw;
+  background-color: #323841;
+  border-radius: 20px;
+  max-height: 18vh;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+.backButton {
+  position:absolute;
+  transform: rotate(180deg);
+  top: 86vh;
+  left:4.5vw;
+}
+
+.linkButton{
+  color: #323841;
+  font-size:0.9vw;
+  transform: rotate(-45deg);
+  margin-left: 0.25vw;
+  vertical-align: middle;
+}
+
+.caseTextContainer {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  left:48vw;
+  width:45vw;
+  /* border: 2px solid red; */
+}
+
+.caseSection {
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 80vh;
+  width: 35vw;
+  padding-top: 13vh;
+  margin-bottom: 6vh;
+  /* border: 2px solid red; */
+}
+
+.caseText {
+  overflow-y: scroll;
+  height: 52vh;
+}
+
+
+
+/* 
+
+Gallery Page
+
+*/
+
+#gallery_wrapper{
+  background-color: #F1EFED;
+  width: 100vw;
+  height:100vh;
+  display:flex;
+  flex-wrap: wrap;
+  padding: 2vh 2vw;
+  box-sizing: border-box;
+  overflow:hidden;
+  /* border: 2px red solid; */
+}
+
+.galleryIconContainer{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  width: 40%;
+  height: 50%;
+  /* border:2px solid blue */
+}
+
+.galleryCluster{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 21vh;
+  width: 10vw;
+  margin: 1vh 1vw;
+  /* border: 2px solid red; */
+}
+
+.galleryCluster p {
+  margin: 0; 
+  padding-top: 0.5vh;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  text-align: center; 
+  font-family: 'Roboto Mono', monospace;
+}
+
+.galleryIcon{
+  width: 8vw;
+  height: 8vw;
+  border-radius: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.galleryIcon svg {
+  fill:#848382;
+  display:block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  max-height: 120px;
+}
+
+.galleryIcon.active svg{
+  fill: #2c4368;
+  transform: scale(1.1);
+}
+
+.galleryImageContainer{
+  width: 36%;
+  height: 40%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  /* border:2px solid pink */
+}
+
+.galleryImageContainer p{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.galleryCard{
+  position: fixed;
+  background-color: #f1efede4;
+  border:2px solid #323841;
+  border-radius: 20px;
+  width: 32vw;
+  height: 68vh;
+  padding: 5vh 1.5vw;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+
+.cardImageContainer{
+  position:relative;
+  height: 33vh;
+  border-radius: 20px;
+  margin: 1.5vh auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8483823c;
+}
+
+.cardImageContainer .carouselButton{
+  margin: 0vh -1vw;
+}
+
+.cardTagContainer{
+  padding-left: 0.2vw;
+  margin-bottom: 1vh;
+  width:26vw;
+  /* border:2px solid red */
+}
+
+.cardDescriptionContainer{
+  overflow-y: scroll;
+  height: 10vh;
+  padding-left:0.5vw;
+  /* border:2px solid red */
+}
+
+
+/* 
+
+About Page
+
+*/
+
+#about_wrapper {
+  position: absolute;
+  display: flex;
+  background-color: #F1EFED;
+  top: 218vh;
+  left: 0;
+  width: 100vw;
+  height: 75vh;
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+}
+
+.imageContainer{
+  height: 45vh;
+  width: 25vw;
+  margin: 0vh 4vw;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  /* border:2px solid; */
+}
+
+#educationContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 0vh 2vw;
+  /* border:2px solid; */
+}
+
+.educationBlock{
+  padding-bottom: 1.5vh;
+  /* border:2px solid; */
+}
+
+.educationHead{
+  font-size: 1vw;
+  padding: 0.2vh 0vw;
+}
+
+.educationSubHead{
+  font-size: 0.93vw;
+  padding: 0.2vh 0vw;
+}
+
+.numbers{
+  font-size: 1.4vw;
+  letter-spacing: 0em;
+}
+
+#skillsContainer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 39%;
+  /* border:2px solid; */
+}
+
+.skillsBlock{
+  padding: 2vh 0.25vw;
+  /* border:2px solid; */
+}
+
+.tagHead {
+  border: 2px solid #848382;
+  border-radius: 12px;
+  padding: 0.25em 0.6em;
+  margin: 0.75vh 0.25vw;
+  font-size: 0.94vw;
+  font-family: 'Roboto', regular;
+  color: #848382;
+  letter-spacing: 0.1em;
+  text-align: center;
+  display: inline-block;
+}
+
+.tag {
+  border-radius: 15px;
+  background-color: #DAD6D4;
+  padding: 0.5em 0.75em;
+  margin: 0.25vw;
+  font-size: 0.9vw;
+  font-family: 'Roboto Mono', monospace;
+  color: #323841;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+/* 
+
+Misc
+
+*/
+
+.carouselButton {
+  position: absolute;
+  top: 48%;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 1.75vw;
+  background: #3d444fe6;
+  color: white;
+  margin: 0vh -3vw;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.carouselContainer {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  display: flex;
+  /* border:2px solid red; */
+}
+
+.carouselItem {
+  width:100%;
+  height: auto;
+  object-fit: contain;
+}
