@@ -1,16 +1,14 @@
 # athena zhou
 
-# designer / developer
-
-Hello! This site showcases my work and projects, offering insight into my skills and experience in creative coding.
+Hello! I'm a NYC based designer and developer. This site showcases my work and projects, offering insight into my skills and experience in creative coding.
 
 ## Navigation
+
+The portfolio was created using React, React Router, Framer Motion, Three.js, and React Three Fiber.
 
 - **Home Page (`/`)**: An introduction to who I am and what I do. This page includes a highlight of my key projects and an overview of my skills.
 - **Case Study Page (`/case-study`)**: Detailed case studies of selected projects. Each key project opens in-depth information about the project's context and technical details.
 - **Gallery Page (`/gallery`)**: A visual gallery showcasing additional projects.
-
-The portfolio was created using React, React Router, Framer Motion, Three.js, and React Three Fiber.
 
 ## Attributions
 
