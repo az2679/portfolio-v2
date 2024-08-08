@@ -21,5 +21,7 @@ The portfolio was created using React, React Router, Framer Motion, Three.js, an
 - **Filter** by <a href="https://thenounproject.com/browse/icons/term/filter/" target="_blank" title="filter Icons">Ian Anandara</a> from Noun Project(CC BY 3.0)
 - **Small Particle** by <a href="https://thenounproject.com/browse/icons/term/small-particle/" target="_blank" title="small particle Icons">TL</a> from Noun Project(CC BY 3.0)
 - **Cable Car** by <a href="https://thenounproject.com/browse/icons/term/cable-car/" target="_blank" title="cable car Icons">Amethyst Studio</a> from Noun Project(CC BY 3.0)
-- **Gothic Window** by [jlbernard](https://sketchfab.com/jlbernard) from <a href=”https://sketchfab.com/3d-models/gothic-window-e7a94e542961467cbf043ed7771a7b81” target="_blank" title="Gothic Window">Sketch Fab </a>
+- **LinkedIn** by <a target="_blank" href="https://icon-sets.iconify.design/tabler/brand-linkedin/">tabler:brand-linkedin</a> from Iconify
+- **Email** by <a target="_blank" href="https://icon-sets.iconify.design/clarity/email-line/">clarity:email-line</a> from Iconify
 - **Star Filled** by <a target="_blank" href="https://icons8.com/icon/qdlIi5HkblsU/star-filled">Icons8</a>
+- **Gothic Window** by [jlbernard](https://sketchfab.com/jlbernard) from <a href=”https://sketchfab.com/3d-models/gothic-window-e7a94e542961467cbf043ed7771a7b81” target="_blank" title="Gothic Window">Sketch Fab</a>

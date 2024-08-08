@@ -14,9 +14,11 @@ export default function Project() {
 
   const handleClick = () => {
     if(activeProjectDetails.title === 'gallery'){
-      navigate('/gallery')
+      // navigate('/gallery')
+      navigate('/portfolio-v2/gallery')
     } else {
-      navigate('/case-study')
+      // navigate('/case-study')
+      navigate('/portfolio-v2/case-study')
     }
   };
 

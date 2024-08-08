@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ReactSVG } from 'react-svg';
 
 import { useProject } from '../context/ProjectContext';
@@ -9,17 +9,8 @@ import Carousel from '../components/Carousel';
 
 export default function CaseStudy({pageVariants, pageTransition}){
   const navigate = useNavigate();
-  // const location = useLocation();
   const { activeProject, setActiveProject, projects } = useProject();
   const [activeSection, setActiveSection] = useState(0);
-
-  // useEffect(() => {
-  //   const query = new URLSearchParams(location.search);
-  //   const projectId = query.get('project');
-  //   if(projectId && project.some(project => project.title === projectId)){
-  //     setActiveProject(projectId)
-  //   }
-  // }, [location.state, projects, setActiveProject])
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -30,7 +21,8 @@ export default function CaseStudy({pageVariants, pageTransition}){
   : { cover: '', description: '' }
 
   const handleClick = () => {
-    navigate('/')
+    // navigate('/')
+    navigate('/portfolio-v2')
     window.scrollTo(0, window.innerHeight);
   };
 
