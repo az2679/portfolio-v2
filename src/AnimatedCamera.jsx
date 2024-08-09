@@ -52,7 +52,7 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 30,
+        x: 35,
         y: 2,
         z: 40,
       },
@@ -62,7 +62,7 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 30,
+        x: 35,
         y: 2,
         z: 40,
       },
@@ -72,7 +72,7 @@ function AnimatedCamera() {
     AnimationTimeline.to(
       cameraRef.current.position,
       {
-        x: 30,
+        x: 35,
         y: 2,
         z: 40,
       },

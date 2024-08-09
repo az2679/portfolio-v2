@@ -312,7 +312,7 @@ Project Page
 }
 
 .projectTagContainer {
-  width: 19vw;
+  width: 22vw;
   transition: opacity 0.3s, visibility 0.3s;
   /* border: 2px solid red; */
 }
@@ -645,7 +645,7 @@ About Page
   /* font-size: 1.12vw; */
   /* font-size: calc(0.75em + 0.5vw); */
   /* font-size: calc(0.75em + 0.95vh); */
-  font-size: 2.3vh;
+  font-size: 2.25vh;
   font-family: 'Roboto Mono', monospace;
   color: #323841;
   text-align: center;

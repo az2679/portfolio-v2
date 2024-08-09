@@ -22,21 +22,21 @@ export default function Scene(){
     },
     'how are you': 
     {
-       position: [0, 7, 10], 
+       position: [3, 7, 10], 
        rotation: [Math.PI*0.1,Math.PI*0.35, Math.PI*0.0], 
        titlePosition: [4, -0.5, 2], 
        titleRotation: [-Math.PI * 0.0, Math.PI * 0.05, Math.PI * 0.0] 
       },
     'the social trolley': 
     { 
-      position: [-10, -2, 20], 
+      position: [-11, -3, 20], 
       rotation: [Math.PI*0.05,Math.PI*0.2, -Math.PI*0.06], 
       titlePosition: [5.5, 1, 0.5], 
       titleRotation: [-Math.PI * 0.0, Math.PI * 0.4, Math.PI * 0.0] 
     },
     'gallery': 
     { 
-      position: [-5, -7, 0], 
+      position: [-2, -7, 0], 
       rotation: [Math.PI*0.0,Math.PI*0.3, Math.PI*0.0], 
       titlePosition: [7, 1.5, 2], 
       titleRotation: [-Math.PI * 0.0, Math.PI * 0.03, Math.PI * 0.0] 
