@@ -5,14 +5,14 @@ body {
 p {
   margin: 0;
   font-family: 'Roboto', regular;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.11em;
   color: #323841;
-  font-size: 0.94em;
+  font-size: 1.17em;
 }
 
 h1 {
   font-family: 'Roboto Mono', monospace;
-  font-size: 2vw;
+  font-size: 2.5vw;
   color: #323841;
   letter-spacing: 0.1em;
   margin-bottom: 3vh;
@@ -23,11 +23,11 @@ img {
   object-fit: cover;
   width:100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 button {
-  font-size: 2vw;
+  font-size: 2.5vw;
   color: #2c4368;
   background: none;
   border: none;
@@ -41,7 +41,7 @@ a {
 
 #site_wrapper {
   background-color: #F1EFED;
-  height: 1700px;
+  height: 1750px;
   width: 100vw;
 }
 
@@ -49,14 +49,15 @@ a {
   position: -webkit-sticky;
   position: sticky;
   background-color: #F1EFED;
-  height: 1132px;
-  width: 100%;
+  height: 1450px;
+  width: 100vw;
   /* border: 2px solid; */
 }
 
 #filler_wrapper {
   background-color: #F1EFED;
   height: 146px;
+  width: 100vw;
   /* border: 2px solid */
 }
 
@@ -98,7 +99,7 @@ Nav Bar
 
 .head {
   font-family: 'Roboto', regular;
-  font-size: 1.8vw;
+  font-size: 2.25vw;
   color: #323841;
   letter-spacing: 0.125em;
   margin-bottom: 0em;
@@ -106,9 +107,9 @@ Nav Bar
 
 .subhead {
   font-family: 'Roboto Mono', monospace;
-  font-size: 1.125vw;
+  font-size: 1.4vw;
   color: #323841;
-  letter-spacing: 0em;
+  letter-spacing: 0.005em;
   margin-top: 0;
 }
 
@@ -126,7 +127,7 @@ Nav Bar
 
 .navItem {
   font-family: 'Roboto Mono', monospace;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   color: #323841;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -164,7 +165,7 @@ Nav Bar
 
 .navIcon {
   color: #000000;
-  font-size: 1.125vw;
+  font-size: 1.4vw;
   padding: 0vh 0.75vw;
   scale: 150%;
 }
@@ -226,8 +227,8 @@ Project Page
 #project_wrapper {
   position: absolute;
   top: 100vh;
-  left: 4vw;
-  width: 92vw;
+  /* left: 4vw; */
+  width: 100vw;
   height: 80vh;
   /* border: 2px solid red; */
 }
@@ -249,10 +250,11 @@ Project Page
   position: relative;
   height: 68vh;
   width: 40vw;
+  /* left: 4vw; */
   margin-top: 1vh;
   margin-bottom: 5vh;
   border: 2px solid #323841;
-  border-radius: 20px;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,9 +272,9 @@ Project Page
   height: 12vh;
   width: 40vw;
   top: 67vh;
-  left: 6vw;
+  left: 10vw;
   background-color: #323841;
-  border-radius: 20px;
+  border-radius: 25px;
   max-height: 18vh;
   z-index: 1;
 }
@@ -280,7 +282,7 @@ Project Page
 .projectDescription {
   color: #F1EFED;
   padding: 2vh 2vw;
-  font-size: 0.85vw;
+  font-size: 1.07vw;
   letter-spacing: 0.1em;
 }
 
@@ -288,11 +290,9 @@ Project Page
   /* position: absolute; */
   position: -webkit-sticky;
   position: sticky;
-  /* top: 120vh; */
   top: 20vh;
   left: 3.5vw;
   width: 92vw;
-  /* width: 48vw; */
   height: 75vh;
   border-radius: 30px;
   overflow: hidden;
@@ -311,7 +311,7 @@ Project Page
 }
 
 .projectTagContainer {
-  width: 20vw;
+  width: 19vw;
   transition: opacity 0.3s, visibility 0.3s;
   /* border: 2px solid red; */
 }
@@ -327,8 +327,8 @@ Project Page
 
 .goButton {
   position:absolute;
-  top: 57vh;
-  left:40.2vw;
+  top: 57.1vh;
+  left:40.3vw;
 }
 
 .drag {
@@ -371,7 +371,7 @@ Case Study Page
   top: 80vh;
   left: 8.5vw;
   background-color: #323841;
-  border-radius: 20px;
+  border-radius: 25px;
   max-height: 18vh;
   overflow-y: scroll;
   z-index: 1;
@@ -380,8 +380,8 @@ Case Study Page
 .backButton {
   position:absolute;
   transform: rotate(180deg);
-  top: 86vh;
-  left:4.5vw;
+  top: 86.2vh;
+  left:4.6vw;
 }
 
 .linkButton{
@@ -487,6 +487,7 @@ Gallery Page
   padding: 0;
   object-fit: contain;
   max-height: 120px;
+  transform: scale(1.05);
 }
 
 .galleryIcon.active svg{
@@ -497,8 +498,8 @@ Gallery Page
 .galleryImageContainer{
   width: 36%;
   height: 40%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
+  box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
   /* border:2px solid pink */
 }
 
@@ -543,8 +544,9 @@ Gallery Page
 
 .cardDescriptionContainer{
   overflow-y: scroll;
-  height: 10vh;
+  height: 11.5vh;
   padding-left:0.5vw;
+  padding-top: 0.5vh;
   /* border:2px solid red */
 }
 
@@ -560,26 +562,25 @@ About Page
   display: flex;
   background-color: #F1EFED;
   top: 218vh;
-  left: 0;
   width: 100vw;
   height: 75vh;
   padding-top: 2vh;
   padding-bottom: 4vh;
 }
 
-.imageContainer{
+.imageContainer {
   height: 45vh;
   width: 25vw;
   margin: 0vh 4vw;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
+  border-radius: 25px;
   /* border:2px solid; */
 }
 
 #educationContainer{
   display: flex;
   flex-direction: column;
-  margin: 0vh 2vw;
+  margin: 0.5vh 3vw;
   /* border:2px solid; */
 }
 
@@ -589,17 +590,17 @@ About Page
 }
 
 .educationHead{
-  font-size: 1vw;
+  font-size: 1.25vw;
   padding: 0.2vh 0vw;
 }
 
 .educationSubHead{
-  font-size: 0.93vw;
+  font-size: 1.2vw;
   padding: 0.2vh 0vw;
 }
 
 .numbers{
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   letter-spacing: 0em;
 }
 
@@ -618,10 +619,10 @@ About Page
 
 .tagHead {
   border: 2px solid #848382;
-  border-radius: 12px;
-  padding: 0.25em 0.6em;
-  margin: 0.75vh 0.25vw;
-  font-size: 0.94vw;
+  border-radius: 15px;
+  padding: 0.22em 0.60em;
+  margin: 0.8vh 0.25vw;
+  font-size: 1.17vw;
   font-family: 'Roboto', regular;
   color: #848382;
   letter-spacing: 0.1em;
@@ -632,9 +633,9 @@ About Page
 .tag {
   border-radius: 15px;
   background-color: #DAD6D4;
-  padding: 0.5em 0.75em;
+  padding: 0.50em 0.75em;
   margin: 0.25vw;
-  font-size: 0.9vw;
+  font-size: 1.12vw;
   font-family: 'Roboto Mono', monospace;
   color: #323841;
   text-align: center;
@@ -654,7 +655,7 @@ Misc
   top: 48%;
   cursor: pointer;
   z-index: 2;
-  font-size: 1.75vw;
+  font-size: 2.2vw;
   background: #3d444fe6;
   color: white;
   margin: 0vh -3vw;

@@ -68,7 +68,7 @@ export default function Gallery(){
 
     <div className='galleryImageContainer' style={{marginLeft: '2vw', marginTop:'4vh'}}>
     <img src="./personal/bento.jpeg" alt="image of bento I made"/>
-    <p style={{position:'absolute', top:'50vh', left:'78vw'}}>hobby: cooking</p>
+    <p style={{position:'absolute', top:'50vh', left:'77vw'}}>hobby: cooking</p>
       </div>
 
     {activeProjectIndicies.map((index,idx) => (
@@ -76,7 +76,7 @@ export default function Gallery(){
       key={index}
       drag
       dragConstraints={{left:-window.innerWidth*0.5, top:-window.innerHeight*0.5, right:window.innerWidth*0.85, bottom:window.innerHeight*0.85}}
-      initial={{x:700, y:0 + (idx * 50), scale: 1}}
+      initial={{x:800, y:0 + (idx * 50), scale: 1}}
       dragElastic={0}
       whileHover={{ scale: 1.025 }}
       whileTap={{ scale: 0.99 }}

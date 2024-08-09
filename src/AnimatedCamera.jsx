@@ -27,6 +27,17 @@ function AnimatedCamera() {
       },
       "one"
     );
+    
+
+    AnimationTimeline.to(
+      cameraRef.current.rotation,
+      {
+        x: 0,
+        y: 0.6,
+        z: 0,
+      },
+      "two"
+    );
 
     AnimationTimeline.to(
       cameraRef.current.rotation,
@@ -35,7 +46,7 @@ function AnimatedCamera() {
         y: 0.4,
         z: 0,
       },
-      "two"
+      "twoooo"
     );
 
     AnimationTimeline.to(
@@ -68,15 +79,15 @@ function AnimatedCamera() {
       "four"
     );
 
-    AnimationTimeline.to(
-      cameraRef.current.position,
-      {
-        x: 30,
-        y: 2,
-        z: 40,
-      },
-      "five"
-    );
+    // AnimationTimeline.to(
+    //   cameraRef.current.position,
+    //   {
+    //     x: 30,
+    //     y: 2,
+    //     z: 40,
+    //   },
+    //   "five"
+    // );
 
     // return () => CameraTimeline.kill();
   }, []);

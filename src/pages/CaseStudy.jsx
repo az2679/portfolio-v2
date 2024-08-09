@@ -69,7 +69,7 @@ export default function CaseStudy({pageVariants, pageTransition}){
 
       <motion.div id="caseStudy_wrapper">
 
-      <motion.div className="caseImageContainer">
+      <motion.div className="caseImageContainer" >
         <div>
         {activeSection <= 1 &&
             activeProjectDetails.tags.map((tag, index) => (

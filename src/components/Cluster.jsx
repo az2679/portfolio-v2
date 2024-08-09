@@ -102,7 +102,7 @@ export default function Cluster({ title, position, rotation, titlePosition, titl
 
       <Text text={title} position={titlePosition} rotation={titleRotation} color={activeProject === title ? color : '#98928F'}/>
 
-      <Html className={`projectTagContainer ${tagVisible ? 'visible' : 'hidden'}`} position={[position[0]+2.5, position[1]-1, position[2]+1]}>
+      <Html className={`projectTagContainer ${tagVisible ? 'visible' : 'hidden'}`} position={[position[0]+3, position[1]-1, position[2]+1]}>
         {tags.map((tag, index) => (
           <span key={index} className='tag'>
             {tag}
