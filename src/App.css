@@ -41,7 +41,7 @@ a {
 
 #site_wrapper {
   background-color: #F1EFED;
-  height: 1750px;
+  height: 250vh;
   width: 100vw;
 }
 
@@ -49,16 +49,17 @@ a {
   position: -webkit-sticky;
   position: sticky;
   background-color: #F1EFED;
-  height: 1450px;
+  height: 180vh;
   width: 100vw;
   /* border: 2px solid; */
 }
 
 #filler_wrapper {
   background-color: #F1EFED;
-  height: 146px;
+  /* height: 146px; */
+  height: 14.6vh;
   width: 100vw;
-  /* border: 2px solid */
+  /* border: 2px solid red; */
 }
 
 .scroll_slide {
@@ -486,8 +487,6 @@ Gallery Page
   margin: 0;
   padding: 0;
   object-fit: contain;
-  max-height: 120px;
-  transform: scale(1.05);
 }
 
 .galleryIcon.active svg{
@@ -561,15 +560,17 @@ About Page
   position: absolute;
   display: flex;
   background-color: #F1EFED;
-  top: 218vh;
+  top: 220vh;
   width: 100vw;
-  height: 75vh;
+  height: 80vh;
   padding-top: 2vh;
   padding-bottom: 4vh;
+  box-sizing: border-box;
 }
 
 .imageContainer {
-  height: 45vh;
+  height: 45vh; 
+  /* 60% */
   width: 25vw;
   margin: 0vh 4vw;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -590,25 +591,29 @@ About Page
 }
 
 .educationHead{
-  font-size: 1.25vw;
+  /* font-size: 1.25vw; */
+  font-size: 2.4vh;
   padding: 0.2vh 0vw;
 }
 
 .educationSubHead{
-  font-size: 1.2vw;
+  /* font-size: 1.2vw; */
+  font-size: 2.3vh;
   padding: 0.2vh 0vw;
 }
 
 .numbers{
-  font-size: 1.8vw;
+  /* font-size: 1.8vw; */
+  font-size: 3.5vh;
   letter-spacing: 0em;
 }
 
 #skillsContainer{
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
-  left: 39%;
+  width: 50%; 
+  margin: -2.5vh 2vw;
   /* border:2px solid; */
 }
 
@@ -622,7 +627,9 @@ About Page
   border-radius: 15px;
   padding: 0.22em 0.60em;
   margin: 0.8vh 0.25vw;
-  font-size: 1.17vw;
+  /* font-size: calc(0.8em + 0.5vw); */
+  /* font-size: calc(0.8em + 0.95vh); */
+  font-size: 2.4vh;
   font-family: 'Roboto', regular;
   color: #848382;
   letter-spacing: 0.1em;
@@ -635,7 +642,10 @@ About Page
   background-color: #DAD6D4;
   padding: 0.50em 0.75em;
   margin: 0.25vw;
-  font-size: 1.12vw;
+  /* font-size: 1.12vw; */
+  /* font-size: calc(0.75em + 0.5vw); */
+  /* font-size: calc(0.75em + 0.95vh); */
+  font-size: 2.3vh;
   font-family: 'Roboto Mono', monospace;
   color: #323841;
   text-align: center;
