@@ -7,7 +7,8 @@ export default defineConfig({
   },
   plugins: [react()],
   publicDir: 'public',
-  base: '/portfolio-v2/',
+  // base: '/portfolio-v2/',
+  base: '/',
   build: {
     outDir: 'docs',
   },

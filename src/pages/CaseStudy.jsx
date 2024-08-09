@@ -21,8 +21,8 @@ export default function CaseStudy({pageVariants, pageTransition}){
   : { cover: '', description: '' }
 
   const handleClick = () => {
-    // navigate('/')
-    navigate('/portfolio-v2')
+    navigate('/')
+    // navigate('/portfolio-v2')
     window.scrollTo(0, window.innerHeight);
   };
 

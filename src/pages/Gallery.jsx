@@ -18,8 +18,8 @@ export default function Gallery(){
   const secondHalf = gallery.slice(half);
 
   const handleClick = () => {
-    // navigate('/')
-    navigate('/portfolio-v2')
+    navigate('/')
+    // navigate('/portfolio-v2')
     window.scrollTo(0, window.innerHeight);
   };
 
