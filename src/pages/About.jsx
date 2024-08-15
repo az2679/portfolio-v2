@@ -87,9 +87,9 @@ export default function About() {
         </div>
       </div>
 
-      <div className='introBlock' style={{top:'80vh', left:'5.5vw', width:'87vw'}}>
+      <div style={{position:'absolute', border:'2px solid #91908e', height:'0vh', width:'15vw',top:'85vh', left:'42vw',borderRadius:'2px'}}></div>
+      <div className='introBlock' style={{top:'87vh', left:'5.5vw', width:'90vw'}}>
       <p style={{fontSize:'1.1vw', fontFamily:'Roboto, monospace'}}>
-        <br />
         Designed in Figma and developed by me using Visual Studio Code. Built with React Three Fiber, animated with Framer Motion and Greensock Animation Platform. Routed with React Router and deployed via GitHub Pages. Typography includes the Roboto and Roboto Mono typefaces.
         </p>
       </div>
