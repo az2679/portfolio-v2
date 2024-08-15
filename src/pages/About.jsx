@@ -86,6 +86,13 @@ export default function About() {
           <span className="tag">spss</span>
         </div>
       </div>
+
+      <div className='introBlock' style={{top:'80vh', left:'5.5vw', width:'87vw'}}>
+      <p style={{fontSize:'1.1vw', fontFamily:'Roboto, monospace'}}>
+        <br />
+        Designed in Figma and developed by me using Visual Studio Code. Built with React Three Fiber, animated with Framer Motion and Greensock Animation Platform. Routed with React Router and deployed via GitHub Pages. Typography includes the Roboto and Roboto Mono typefaces.
+        </p>
+      </div>
     </div>
   )
 }

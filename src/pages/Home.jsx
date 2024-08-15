@@ -26,7 +26,7 @@ export default function Home() {
         <br />
         </p>
       </div>
-      <div className='introBlock' style={{top:'19vh', left:'75vw'}}>
+      <div className='introBlock' style={{top:'10vh', left:'75vw'}}>
       <p style={{fontSize:'1.36vw'}}>
       <br />
         Currently, it has led me to become a creative technologist that uses digital interactivity to explore
@@ -35,6 +35,14 @@ export default function Home() {
         <br />
         My latest projects have been centered on <b>communication of beliefs</b>.
       </p>
+      </div>
+
+      <div className='introBlock' style={{top:'49vh', left:'4vw', width:'23vw'}}>
+      <p style={{fontSize:'1.25vw'}}>
+        <br />
+        You can also find me exploring various art forms (currently, wheel throwing), indulging my pup with back scratches, or connecting with my siblings virtually over game nights. 
+        <br />
+        </p>
       </div>
     </div>
   )

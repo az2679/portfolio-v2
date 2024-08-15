@@ -4,7 +4,7 @@ Hello! I'm a NYC based designer and developer. This site showcases my work and p
 
 ## Navigation
 
-The portfolio was created using React, React Router, Framer Motion, Three.js, and React Three Fiber.
+Designed in Figma and developed by me using Visual Studio Code. Built with React Three Fiber, animated with Framer Motion and Greensock Animation Platform. Routed with React Router and deployed via GitHub Pages. Typography includes the Roboto and Roboto Mono typefaces.
 
 - **Home Page (`/`)**: An introduction to who I am and what I do. This page includes a highlight of my key projects and an overview of my skills.
 - **Case Study Page (`/case-study`)**: Detailed case studies of selected projects. Each key project opens in-depth information about the project's context and technical details.
