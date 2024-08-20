@@ -78,7 +78,7 @@ export default function Gallery(){
       drag
       dragConstraints={
         mobile
-          ? { left: 0, top: 0, right:window.innerWidth*0.75, bottom:window.innerHeight*0.75 } 
+          ? { left: -window.innerWidth*0.5, top: -window.innerHeight*0.5, right:window.innerWidth*0.75, bottom:window.innerHeight*0.75 } 
           : {left:-window.innerWidth*0.5, top:-window.innerHeight*0.5, right:window.innerWidth*0.85, bottom:window.innerHeight*0.85}
       }
       initial={
@@ -87,8 +87,8 @@ export default function Gallery(){
           : { x: window.innerHeight * 1.1, y: 0 + (idx * 50), scale: 1 }
       }
       dragElastic={0}
-      whileHover={{ scale: 1.025 }}
-      whileTap={{ scale: 0.99 }}
+      whileHover={!mobile ? { scale: 1.025 } : undefined}
+    whileTap={!mobile ? { scale: 0.99 } : undefined}
       transition={{ type:'tween', stiffness: 500 }}
       >
         <GalleryCard project={gallery[index]} />
