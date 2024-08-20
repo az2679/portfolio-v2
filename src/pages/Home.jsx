@@ -18,16 +18,16 @@ export default function Home() {
 
   return(
     <div id="home_wrapper" className={isVisible ? 'visible' : 'hidden'}>
-      <div className='introBlock' style={{top:'0vh', left:'4vw'}}>
-      <p style={{fontSize:'1.36vw'}}>
+      <div className="introBlock intro1">
+      <p className="introText">
         <br />
         A scholar to the core, my boundless curiosity for understanding the intricacies of <b>human behavior</b>{' '}
         has been constant throughout all stages of my life.
         <br />
         </p>
       </div>
-      <div className='introBlock' style={{top:'10vh', left:'75vw'}}>
-      <p style={{fontSize:'1.36vw'}}>
+      <div className="introBlock intro2">
+      <p className="introText">
       <br />
         Currently, it has led me to become a creative technologist that uses digital interactivity to explore
         <b> motivation and decision making</b>. 
@@ -37,8 +37,8 @@ export default function Home() {
       </p>
       </div>
 
-      <div className='introBlock' style={{top:'49vh', left:'4vw', width:'23vw'}}>
-      <p style={{fontSize:'1.25vw'}}>
+      <div className="introBlock introHobby">
+      <p className="hobbyText">
         <br />
         You can also find me exploring various art forms (currently, wheel throwing), indulging my pup with back scratches, or connecting with my siblings virtually over game nights. 
         <br />

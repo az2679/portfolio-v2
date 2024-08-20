@@ -69,8 +69,8 @@ export default function CaseStudy({pageVariants, pageTransition}){
 
       <motion.div id="caseStudy_wrapper">
 
-      <motion.div className="caseImageContainer" >
-        <div>
+      <motion.div className="caseContainer" >
+        <div className="caseTagContainer">
         {activeSection <= 1 &&
             activeProjectDetails.tags.map((tag, index) => (
               <span key={index} className="tag">
@@ -94,7 +94,7 @@ export default function CaseStudy({pageVariants, pageTransition}){
             ))}
          </div>
 
-         <div className="projectImageContainer">
+         <div className="caseImageContainer">
           {activeSection <= 1 && (
             <Carousel items={activeProjectDetails.documentation1} />
           )}

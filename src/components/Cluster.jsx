@@ -10,6 +10,17 @@ export default function Cluster({ title, position, rotation, titlePosition, titl
   const [color, setColor] = useState('#3D444F')
   const [tagVisible, setTagVisible] = useState(false)
 
+  const [mobile, setMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const handleClick = () => {
     setActiveProject(title);
     setColor('#323841')
@@ -20,7 +31,7 @@ export default function Cluster({ title, position, rotation, titlePosition, titl
       const scrollPosition = window.scrollY;
       const viewportHeight = window.innerHeight;
 
-      setTagVisible(scrollPosition > viewportHeight * 0.5 && scrollPosition < viewportHeight * 1.5);
+      setTagVisible(scrollPosition > viewportHeight * 0.6 && scrollPosition < viewportHeight * 1.5);
     }
     window.addEventListener('scroll', handleScroll);
 
@@ -33,7 +44,7 @@ export default function Cluster({ title, position, rotation, titlePosition, titl
     switch (title) {
       case 'tangible values':
         return(
-          <Octahedron args={[1, 0]} position={[0,-0.5,0.75]} >
+          <Octahedron args={mobile ? [1.4, 0] : [1, 0]} position={[0,-0.5,0.75]} >
             <meshStandardMaterial color={activeProject === title ? color : '#98928F'} />
           </Octahedron>
         );
@@ -100,7 +111,9 @@ export default function Cluster({ title, position, rotation, titlePosition, titl
         {renderGeometry()}
       </mesh>
 
+      {!mobile &&
       <Text text={title} position={titlePosition} rotation={titleRotation} color={activeProject === title ? color : '#98928F'}/>
+      }
 
       <Html className={`projectTagContainer ${tagVisible ? 'visible' : 'hidden'}`} position={[position[0]+3, position[1]-1, position[2]+1]}>
         {tags.map((tag, index) => (

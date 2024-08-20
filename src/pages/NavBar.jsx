@@ -10,7 +10,7 @@ export default function NavBar() {
       const viewportHeight = window.innerHeight;
       if (scrollPosition < viewportHeight*0.5) {
         setActiveTab('home');
-      } else if (scrollPosition < viewportHeight * 1.5){
+      } else if (scrollPosition < viewportHeight * 1.6){
         setActiveTab('projects');
       } else {
         setActiveTab('about');
@@ -31,10 +31,10 @@ export default function NavBar() {
         scrollPosition = 0;
         break;
       case 'projects':
-        scrollPosition = window.innerHeight;
+        scrollPosition = window.innerHeight*1.14;
         break;
       case 'about':
-        scrollPosition= window.innerHeight*2;
+        scrollPosition= window.innerHeight*2.3;
         break;
       default:
         scrollPosition = 0;
@@ -59,7 +59,7 @@ export default function NavBar() {
         ))}
       </div>
       <div id="navContactContainer">
-        <div className="navItem" style={{paddingRight: '0vw', letterSpacing: '0.125em'}}>NYC,</div>
+        <div className="navItem navItemContact">NYC,</div>
         <a className="navIcon" href={'mailto:zhouathena@gmail.com'} >
           <ReactSVG style={{height:'100%', width:'100%'}} src={'./icon/email.svg'} />
         </a>

@@ -26,7 +26,7 @@ export default function Project() {
     <>
     <div id="project_wrapper">
       <div className="projectContainer">
-      <div className="projectImageContainer" style={{left:'4vw'}}>
+      <div className="projectImageContainer">
           <img className="projectImage" src={activeProjectDetails.cover} alt="Image of Project"/>
         <button className="goButton" onClick={handleClick}>
         <ReactSVG style={{height:'100%', width:'100%'}} src={'./icon/arrow.svg'} />

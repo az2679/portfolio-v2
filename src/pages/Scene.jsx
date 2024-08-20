@@ -1,4 +1,4 @@
-import { Suspense, useRef } from 'react';
+import { Suspense, useRef, useState, useEffect } from 'react';
 import { Canvas } from "@react-three/fiber";
 
 import { useProject } from '../context/ProjectContext';
@@ -11,6 +11,17 @@ export default function Scene(){
   const { projects } = useProject();
   const raycastBoundingRef = useRef();
   const userRef = useRef();
+
+  const [mobile, setMobile] = useState(window.innerWidth <= 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const clusterPositions = {
     'tangible values': 
@@ -43,6 +54,37 @@ export default function Scene(){
     },
   };
 
+  const mobileClusterPositions = {
+    'tangible values': 
+    { 
+      position: [0.5, 10, 26], 
+      rotation: [-Math.PI*0.4, Math.PI*0.15, -Math.PI*0.1], 
+      titlePosition: [0,0,0], 
+      titleRotation: [0,0,0],
+    },
+    'how are you': 
+    {
+       position: [5, 10, 23],
+       rotation: [Math.PI*0.1,Math.PI*0.35, Math.PI*0.0], 
+       titlePosition: [0,0,0],
+       titleRotation: [0,0,0],
+      },
+    'the social trolley': 
+    { 
+      position: [7, 10, 18], 
+      rotation: [Math.PI*0.2,Math.PI*0.05, -Math.PI*0.2], 
+      titlePosition: [0,0,0],
+      titleRotation: [0,0,0],
+    },
+    'gallery': 
+    { 
+      position: [8, 11, 10], 
+      rotation: [Math.PI*0.0, Math.PI*0.0, Math.PI*0.0], 
+      titlePosition: [0,0,0], 
+      titleRotation: [0,0,0],
+    },
+  };
+
   return(
     <div id="canvas_wrapper" >
       <div ref={raycastBoundingRef} className="boundingBoxContainer" />
@@ -55,7 +97,11 @@ export default function Scene(){
         <Suspense fallback={<Html><div style={{marginLeft: '-20vw', height:'200vh', display:'flex', justifyContent:'center'}}>Loading...</div></Html>}>
 
         {projects.map((project, index) => {
-          const { position, rotation, titlePosition, titleRotation  } = clusterPositions[project.title] || { position: [0,0,0], rotation:[0,0,0], titlePosition: [0,0,0], titleRotation:[0,0,0]};
+          const { position, rotation, titlePosition, titleRotation } = 
+            mobile ? 
+            mobileClusterPositions[project.title] || { position: [0, 0, 0], rotation: [0, 0, 0], titlePosition: [0, 0, 0], titleRotation: [0, 0, 0] }
+            : clusterPositions[project.title] || { position: [0, 0, 0], rotation: [0, 0, 0], titlePosition: [0, 0, 0], titleRotation: [0, 0, 0] };
+        
           return(
             <Cluster 
               key={index}

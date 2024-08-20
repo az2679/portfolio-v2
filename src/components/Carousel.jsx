@@ -53,10 +53,10 @@ export default function Carousel({items}) {
 
       {showButtons && (
         <>
-      <div className="carouselButton" onClick={() => paginate(-1)} style={{left:'0', transform:'rotate(180deg)', paddingBottom:'0.25vh', paddingRight:'0.7vw', paddingLeft:'0.85vw'}}>
+      <div className="carouselButton carouselButtonLeft" onClick={() => paginate(-1)}>
         {"‣"}
       </div>
-      <div className="carouselButton" onClick={() => paginate(1)} style={{right:'0', paddingBottom:'0.25vh', paddingRight:'0.7vw', paddingLeft:'0.85vw'}}>
+      <div className="carouselButton carouselButtonRight" onClick={() => paginate(1)}>
         {"‣"}
       </div>
       </>

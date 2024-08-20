@@ -11,7 +11,8 @@ import GalleryCard from '../components/GalleryCard';
 export default function Gallery(){
   const navigate = useNavigate();
   const { activeProjects, toggleProjectActiveState, gallery } = useGallery();
-  const [activeProjectIndicies, setActiveProjectIndicies] = useState([])
+  const [activeProjectIndicies, setActiveProjectIndicies] = useState([]);
+  const [mobile, setMobile] = useState(window.innerWidth <= 768);
 
   const half = Math.floor(gallery.length/2);
   const firstHalf = gallery.slice(0, half);
@@ -42,7 +43,7 @@ export default function Gallery(){
     </div>
 
 
-    <div className="galleryIconContainer" style={{width: '37%', marginLeft:'2vw'}}>
+    <div className="galleryIconContainer topIcons">
     {firstHalf.map((project, index) => (
       <GalleryIcon
         key={index}
@@ -54,7 +55,7 @@ export default function Gallery(){
     ))}
     </div>
 
-    <div className="galleryIconContainer" style={{justifyContent:'right', marginLeft:'15vw'}}>
+    <div className="galleryIconContainer bottomIcons">
     {secondHalf.map((project, index) => (
       <GalleryIcon
         key={index + half}
@@ -75,8 +76,16 @@ export default function Gallery(){
       <motion.div style={{position:'fixed'}}
       key={index}
       drag
-      dragConstraints={{left:-window.innerWidth*0.5, top:-window.innerHeight*0.5, right:window.innerWidth*0.85, bottom:window.innerHeight*0.85}}
-      initial={{x:window.innerHeight*1.2, y:0 + (idx * 50), scale: 1}}
+      dragConstraints={
+        mobile
+          ? { left: 0, top: 0, right:window.innerWidth*0.75, bottom:window.innerHeight*0.75 } 
+          : {left:-window.innerWidth*0.5, top:-window.innerHeight*0.5, right:window.innerWidth*0.85, bottom:window.innerHeight*0.85}
+      }
+      initial={
+        mobile
+          ? { x: 0, y: 0 + (idx * 50), scale: 1 } 
+          : { x: window.innerHeight * 1.1, y: 0 + (idx * 50), scale: 1 }
+      }
       dragElastic={0}
       whileHover={{ scale: 1.025 }}
       whileTap={{ scale: 0.99 }}
@@ -87,7 +96,7 @@ export default function Gallery(){
       )
     )}
     
-    <button className="backButton" onClick={handleClick} style={{left:'10vw'}}>
+    <button className="galleryButton" onClick={handleClick}>
     <ReactSVG style={{height:'100%', width:'100%'}} src={'./icon/arrow.svg'} />
     </button>
 
