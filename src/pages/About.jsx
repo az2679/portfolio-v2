@@ -26,7 +26,7 @@ export default function About() {
                 Psychology BS
               </p>
               <p className="educationSubHead">
-                Philosphy BA
+                Philosophy BA
               </p>
               <p className="educationSubHead">
                 Linguistics Minor
