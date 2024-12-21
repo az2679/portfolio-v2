@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(true);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,31 +18,43 @@ export default function Home() {
     }
   }, [])
 
+  const renderBold = (text) => {
+    const parts = text.split('<b>').map((part, index) => {
+      if (index === 0) return part;
+      const [boldText, remaining] = part.split('</b>');
+      return (
+        <>
+          <b>{boldText}</b>
+          {remaining}
+        </>
+      )
+    });
+    return parts;
+  }
+
   return(
     <div id="home_wrapper" className={isVisible ? 'visible' : 'hidden'}>
       <div className="introBlock intro1">
       <p className="introText">
         <br />
-        A scholar to the core, my boundless curiosity for understanding the intricacies of <b>human behavior</b>{' '}
-        has been constant throughout all stages of my life.
+        {renderBold(t('homeScholar'))}
         <br />
         </p>
       </div>
       <div className="introBlock intro2">
       <p className="introText">
       <br />
-        Currently, it has led me to become a creative technologist that uses digital interactivity to explore
-        <b> motivation and decision making</b>. 
+        {renderBold(t('homeCreative'))}
         <br />
         <br />
-        My latest projects have been centered on <b>communication of beliefs</b>.
+        {renderBold(t('homeProjects'))}
       </p>
       </div>
 
       <div className="introBlock introHobby">
       <p className="hobbyText">
         <br />
-        You can also find me exploring various art forms (currently, wheel throwing), indulging my pup with back scratches, or connecting with my siblings virtually over game nights. 
+        {t('homeHobbies')}
         <br />
         </p>
       </div>
