@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 export default function About() {
+  const { t } = useTranslation();
+
   return(
     <div id="about_wrapper">
       <div className="aboutContainer">
@@ -10,26 +14,26 @@ export default function About() {
           <li>
             <div className="educationBlock">
               <p className="educationHead">
-                <span className="numbers">2022 - 2024</span> NYU Tisch
+                <span className="numbers">2022 - 2024</span> {t('nyu')}
               </p>
               <p className="educationSubHead">
-                Interactive Telecommunication MPS
+              {t('itp')}
               </p>
             </div>
           </li>
           <li>
             <div className="educationBlock">
               <p className="educationHead">
-                <span className="numbers">2018 - 2021</span> UNC-CH
+                <span className="numbers">2018 - 2021</span> {t('unc')}
               </p>
               <p className="educationSubHead">
-                Psychology BS
+              {t('psyc')}
               </p>
               <p className="educationSubHead">
-                Philosophy BA
+              {t('phil')}
               </p>
               <p className="educationSubHead">
-                Linguistics Minor
+              {t('ling')}
               </p>
             </div>
           </li>
@@ -39,7 +43,7 @@ export default function About() {
   
       <div id="skillsContainer">
         <div className="skillsBlock">
-          <span className="tagHead">coding</span>
+          <span className="tagHead">{t('coding')}</span>
           <br />
           <span className="tag">html</span>
           <span className="tag">css</span>
@@ -65,12 +69,12 @@ export default function About() {
           <span className="tag">r</span>
         </div>
         <div className="skillsBlock">
-          <span className="tagHead">softwares</span>
+          <span className="tagHead">{t('softwares')}</span>
           <br />
           <span className="tag">fusion 360</span>
           <span className="tag">blender</span>
           <span className="tag">physical computing</span>
-          <span className="tag">unreal engine</span>/
+          <span className="tag">unreal engine</span>
           <br />
           <span className="tag">photoshop</span>
           <span className="tag">illustrator</span>
@@ -90,7 +94,7 @@ export default function About() {
       <div className='divider'></div>
       <div className='introBlock introCode'>
       <p className='codeText'>
-        Designed in Figma and developed by me using Visual Studio Code. Built with React Three Fiber, animated with Framer Motion and Greensock Animation Platform. Routed with React Router and deployed via GitHub Pages. Typography includes the Roboto and Roboto Mono typefaces.
+        {t('code')}
         </p>
       </div>
     </div>

@@ -58,7 +58,7 @@ export default function NavBar() {
       <div id="navTabsContainer">
         {['home', 'projects', 'about'].map((tab) => (
           <div key={tab} className={`navItem ${activeTab === tab ? 'active' : ''}`} onClick={() => handleClick(tab)}>
-            {tab}
+            {t(tab)}
           </div>
         ))}
       </div>
