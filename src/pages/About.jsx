@@ -26,7 +26,7 @@ export default function About() {
                 Psychology BS
               </p>
               <p className="educationSubHead">
-                Philosphy BA
+                Philosophy BA
               </p>
               <p className="educationSubHead">
                 Linguistics Minor
@@ -70,7 +70,7 @@ export default function About() {
           <span className="tag">fusion 360</span>
           <span className="tag">blender</span>
           <span className="tag">physical computing</span>
-          <span className="tag">unreal engine</span>
+          <span className="tag">unreal engine</span>/
           <br />
           <span className="tag">photoshop</span>
           <span className="tag">illustrator</span>

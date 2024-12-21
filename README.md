@@ -23,5 +23,7 @@ Designed in Figma and developed by me using Visual Studio Code. Built with React
 - **Cable Car** by <a href="https://thenounproject.com/browse/icons/term/cable-car/" target="_blank" title="cable car Icons">Amethyst Studio</a> from Noun Project(CC BY 3.0)
 - **LinkedIn** by <a target="_blank" href="https://icon-sets.iconify.design/tabler/brand-linkedin/">tabler:brand-linkedin</a> from Iconify
 - **Email** by <a target="_blank" href="https://icon-sets.iconify.design/clarity/email-line/">clarity:email-line</a> from Iconify
+- **Japanese Flag** by <a target="_blank" href="https://www.flaticon.com/free-icons/japan">Japan icons</a> from Freepik - Flaticon
+- **English Flag** by <a target="_blank" href="https://icons8.com/icon/ZAhrTZoHdWPg/great-britain">uk flag</a> from Icons8
 - **Star Filled** by <a target="_blank" href="https://icons8.com/icon/qdlIi5HkblsU/star-filled">Icons8</a>
 - **Gothic Window** by [jlbernard](https://sketchfab.com/jlbernard) from <a href=”https://sketchfab.com/3d-models/gothic-window-e7a94e542961467cbf043ed7771a7b81” target="_blank" title="Gothic Window">Sketch Fab</a>

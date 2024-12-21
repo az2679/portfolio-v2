@@ -137,6 +137,7 @@ Nav Bar
 
 .navItem:not(.active):hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .navItem.active {
@@ -173,10 +174,48 @@ Nav Bar
 .navIcon {
   color: #000000;
   font-size: 1.4vw;
-  padding: 0vh 0.75vw;
+  padding: 0vh 0.5vw 0vh 1vw;
   scale: 150%;
   margin-top: 1vh;
+  /* border: 2px solid; */
 }
+
+.navIcon:hover {
+  transform: scale(1.05);
+  /* cursor: pointer; */
+}
+
+.langToggle {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  margin-top: 0.25vh;
+}
+
+.langButton {
+  display:flex;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  letter-spacing: 0.11em;
+  font-size: 1.5vw;
+  color: #323841;
+  transition: background-color 0.3s;
+}
+
+.langButton:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.flagIcon {
+  padding-right: 1.5vw;
+  font-size: 1.5vw;
+  width: 1.5vw;
+  display: block;
+}
+
+
 
 /* 
 

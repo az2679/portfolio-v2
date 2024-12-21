@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
 import { ReactSVG } from 'react-svg';
+import { useTranslation } from 'react-i18next';
+
+import LanguageToggle from '../components/LanguageToggle';
 
 export default function NavBar() {
   const [activeTab, setActiveTab] = useState();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +53,7 @@ export default function NavBar() {
     <div id="navBar_wrapper">
       <div id="navHeadContainer">
         <p className="head">athena zhou</p>
-        <p className="subhead">designer / developer</p>
+        <p className="subhead">{t('role')}</p>
       </div>
       <div id="navTabsContainer">
         {['home', 'projects', 'about'].map((tab) => (
@@ -58,6 +62,7 @@ export default function NavBar() {
           </div>
         ))}
       </div>
+      
       <div id="navContactContainer">
         <div className="navItem navItemContact">NYC,</div>
         <a className="navIcon" href={'mailto:zhouathena@gmail.com'} >
@@ -66,6 +71,7 @@ export default function NavBar() {
         <a className="navIcon" href={'https://www.linkedin.com/in/athenayzhou'} dis target="_blank" rel="noopener noreferrer">
           <ReactSVG style={{height:'100%', width:'100%'}} src={'./icon/linkedin.svg'} />
         </a>
+        <LanguageToggle />
       </div>
     </div>
 
