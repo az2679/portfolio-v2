@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 export default function About() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['general', 'projects', 'gallery']);
 
   return(
     <div id="about_wrapper">
@@ -14,26 +14,26 @@ export default function About() {
           <li>
             <div className="educationBlock">
               <p className="educationHead">
-                <span className="numbers">2022 - 2024</span> {t('nyu')}
+                <span className="numbers">2022 - 2024</span> {t('general:nyu')}
               </p>
               <p className="educationSubHead">
-              {t('itp')}
+              {t('general:itp')}
               </p>
             </div>
           </li>
           <li>
             <div className="educationBlock">
               <p className="educationHead">
-                <span className="numbers">2018 - 2021</span> {t('unc')}
+                <span className="numbers">2018 - 2021</span> {t('general:unc')}
               </p>
               <p className="educationSubHead">
-              {t('psyc')}
+              {t('general:psyc')}
               </p>
               <p className="educationSubHead">
-              {t('phil')}
+              {t('general:phil')}
               </p>
               <p className="educationSubHead">
-              {t('ling')}
+              {t('general:ling')}
               </p>
             </div>
           </li>
@@ -43,7 +43,7 @@ export default function About() {
   
       <div id="skillsContainer">
         <div className="skillsBlock">
-          <span className="tagHead">{t('coding')}</span>
+          <span className="tagHead">{t('general:coding')}</span>
           <br />
           <span className="tag">html</span>
           <span className="tag">css</span>
@@ -69,7 +69,7 @@ export default function About() {
           <span className="tag">r</span>
         </div>
         <div className="skillsBlock">
-          <span className="tagHead">{t('softwares')}</span>
+          <span className="tagHead">{t('general:softwares')}</span>
           <br />
           <span className="tag">fusion 360</span>
           <span className="tag">blender</span>
@@ -94,7 +94,7 @@ export default function About() {
       <div className='divider'></div>
       <div className='introBlock introCode'>
       <p className='codeText'>
-        {t('code')}
+        {t('general:codedIn')}
         </p>
       </div>
     </div>

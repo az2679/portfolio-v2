@@ -1,9 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Fragment } from 'react';
 import { useTranslation } from 'react-i18next';
+
+import { RenderBold } from '../components/renderHTML';
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(true);
-  const { t } = useTranslation();
+  const { t } = useTranslation(['general', 'projects', 'gallery']);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,43 +20,29 @@ export default function Home() {
     }
   }, [])
 
-  const renderBold = (text) => {
-    const parts = text.split('<b>').map((part, index) => {
-      if (index === 0) return part;
-      const [boldText, remaining] = part.split('</b>');
-      return (
-        <>
-          <b>{boldText}</b>
-          {remaining}
-        </>
-      )
-    });
-    return parts;
-  }
-
   return(
     <div id="home_wrapper" className={isVisible ? 'visible' : 'hidden'}>
       <div className="introBlock intro1">
       <p className="introText">
         <br />
-        {renderBold(t('homeScholar'))}
+        <RenderBold text={(t('general:homeScholar'))} />
         <br />
         </p>
       </div>
       <div className="introBlock intro2">
       <p className="introText">
       <br />
-        {renderBold(t('homeCreative'))}
+        <RenderBold text={(t('general:homeCreative'))} />
         <br />
         <br />
-        {renderBold(t('homeProjects'))}
+        <RenderBold text={(t('general:homeProjects'))} />
       </p>
       </div>
 
       <div className="introBlock introHobby">
       <p className="hobbyText">
         <br />
-        {t('homeHobbies')}
+        <RenderBold text={(t('general:homeHobbies'))} />
         <br />
         </p>
       </div>

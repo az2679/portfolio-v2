@@ -9,11 +9,11 @@ export default function Project() {
   const navigate = useNavigate();
 
   const activeProjectDetails = activeProject
-    ? projects.find(project => project.title === activeProject)
-    : { cover: '', description: '' }
+    ? projects.find(project => project.id === activeProject) || { cover: '', description: '', id: '' }
+    : { cover: '', description: '', id: '' };
 
   const handleClick = () => {
-    if(activeProjectDetails.title === 'gallery'){
+    if(activeProjectDetails.id === 'gallery'){
       navigate('/gallery')
       // navigate('/portfolio-v2/gallery')
     } else {

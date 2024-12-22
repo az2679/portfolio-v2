@@ -53,12 +53,12 @@ export default function NavBar() {
     <div id="navBar_wrapper">
       <div id="navHeadContainer">
         <p className="head">athena zhou</p>
-        <p className="subhead">{t('role')}</p>
+        <p className="subhead">{t('general:role')}</p>
       </div>
       <div id="navTabsContainer">
         {['home', 'projects', 'about'].map((tab) => (
           <div key={tab} className={`navItem ${activeTab === tab ? 'active' : ''}`} onClick={() => handleClick(tab)}>
-            {t(tab)}
+            {t(`general:${tab}`)}
           </div>
         ))}
       </div>

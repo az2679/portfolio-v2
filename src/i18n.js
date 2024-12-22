@@ -6,14 +6,17 @@ import jpTranslation from './locales/jp/translation.json';
 
 i18n.use(initReactI18next).init({
   resources: {
-    en: { translation: enTranslation },
-    jp: { translation: jpTranslation },
+    en: enTranslation,
+    jp: jpTranslation,
   },
   lng: 'en',
   fallbackLng: 'en',
+  ns: ['general', 'projects', 'gallery'],
+  defaultNS: 'general',
   interpolation: {
     escapeValue: false,
   },
+  returnObjects: true,
 });
 
 export default i18n;

@@ -7,12 +7,16 @@ import { useGallery } from '../context/GalleryContext';
 import GalleryIcon from '../components/GalleryIcon';
 import GalleryCard from '../components/GalleryCard';
 
+import { useTranslation } from 'react-i18next';
+
 
 export default function Gallery(){
   const navigate = useNavigate();
   const { activeProjects, toggleProjectActiveState, gallery } = useGallery();
   const [activeProjectIndicies, setActiveProjectIndicies] = useState([]);
   const [mobile, setMobile] = useState(window.innerWidth <= 768);
+
+  const { t } = useTranslation();
 
   const half = Math.floor(gallery.length/2);
   const firstHalf = gallery.slice(0, half);
@@ -39,7 +43,7 @@ export default function Gallery(){
 
     <div className='galleryImageContainer' style={{marginLeft:'5vw', marginTop:'4vh'}}>
     <img src="./personal/tobi.jpeg" alt="image of my dog, Tobi"/>
-    <p style={{position:'absolute', top:'46vh', left:'8vw'}}>pet: tobi</p>
+    <p style={{position:'absolute', top:'46vh', left:'8vw'}}>{t('pet')}</p>
     </div>
 
 
@@ -69,7 +73,7 @@ export default function Gallery(){
 
     <div className='galleryImageContainer' style={{marginLeft: '2vw', marginTop:'4vh'}}>
     <img src="./personal/bento.jpeg" alt="image of bento I made"/>
-    <p style={{position:'absolute', top:'50vh', left:'auto', right:'9vw'}}>hobby: cooking</p>
+    <p style={{position:'absolute', top:'50vh', left:'auto', right:'9vw'}}>{t('cook')}</p>
       </div>
 
     {activeProjectIndicies.map((index,idx) => (

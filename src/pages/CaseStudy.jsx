@@ -6,18 +6,22 @@ import { ReactSVG } from 'react-svg';
 import { useProject } from '../context/ProjectContext';
 import Carousel from '../components/Carousel';
 
+import { useTranslation } from 'react-i18next';
+import LanguageToggle from '../components/LanguageToggle';
 
 export default function CaseStudy({pageVariants, pageTransition}){
   const navigate = useNavigate();
   const { activeProject, setActiveProject, projects } = useProject();
   const [activeSection, setActiveSection] = useState(0);
 
+  const { t } = useTranslation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   const activeProjectDetails = activeProject
-  ? projects.find(project => project.title === activeProject)
+  ? projects.find(project => project.id === activeProject)
   : { cover: '', description: '' }
 
   const handleClick = () => {
@@ -92,6 +96,7 @@ export default function CaseStudy({pageVariants, pageTransition}){
                 </svg>
               </a>
             ))}
+            <LanguageToggle styleVariant="tag" />
          </div>
 
          <div className="caseImageContainer">
@@ -141,7 +146,7 @@ export default function CaseStudy({pageVariants, pageTransition}){
 
       <div id="context" className="caseSection">
         <div>
-            <h1>context</h1>
+            <h1>{t('context')}</h1>
           <div className='caseText'>
             <p>{activeProjectDetails.context}</p>
           </div>
@@ -150,7 +155,7 @@ export default function CaseStudy({pageVariants, pageTransition}){
 
       <div id="technical" className="caseSection">
         <div>
-          <h1>technical details</h1>
+          <h1>{t('technicalDetails')}</h1>
           <div className='caseText'>
             <p>{activeProjectDetails.technical}</p>
           </div>

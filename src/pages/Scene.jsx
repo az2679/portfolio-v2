@@ -99,8 +99,8 @@ export default function Scene(){
         {projects.map((project, index) => {
           const { position, rotation, titlePosition, titleRotation } = 
             mobile ? 
-            mobileClusterPositions[project.title] || { position: [0, 0, 0], rotation: [0, 0, 0], titlePosition: [0, 0, 0], titleRotation: [0, 0, 0] }
-            : clusterPositions[project.title] || { position: [0, 0, 0], rotation: [0, 0, 0], titlePosition: [0, 0, 0], titleRotation: [0, 0, 0] };
+            mobileClusterPositions[project.id] || { position: [0, 0, 0], rotation: [0, 0, 0], titlePosition: [0, 0, 0], titleRotation: [0, 0, 0] }
+            : clusterPositions[project.id] || { position: [0, 0, 0], rotation: [0, 0, 0], titlePosition: [0, 0, 0], titleRotation: [0, 0, 0] };
         
           return(
             <Cluster 

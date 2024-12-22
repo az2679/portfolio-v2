@@ -1,34 +1,100 @@
 {
-  "role": "designer / developer",
-  "nyc": "NYC,",
-  "home": "home",
-  "projects": "projects",
-  "about": "about",
-  "homeScholar": "A scholar to the core, my boundless curiosity for understanding the intricacies of <b>human behavior</b> has been constant throughout all stages of my life.",
-  "homeCreative": "Currently, it has led me to become a creative technologist that uses digital interactivity to explore <b>motivation and decision making</b>.",
-  "homeProjects": "My latest projects have been centered on <b>communication of beliefs</b>.",
-  "homeHobbies": "You can also find me exploring various art forms (currently, wheel throwing), indulging my pup with back scratches, or connecting with my siblings virtually over game nights.",
-  "nyu": "NYU Tisch",
-  "itp": "Interactive Telecommunication MPS",
-  "unc": "UNC-CH",
-  "psyc": "Psychology BS",
-  "phil": "Philosophy BA",
-  "ling": "Linguistics Minor",
-  "coding": "coding",
-  "softwares":"softwares",
-  "code": "Designed in Figma and developed by me using Visual Studio Code. Built with React Three Fiber, animated with Framer Motion and Greensock Animation Platform. Routed with React Router and deployed via GitHub Pages. Typography includes the Roboto and Roboto Mono typefaces.",
-  "tangibleValues": "tangible values",
-  "creativeCoding": "creative coding",
-  "interactive": "interactive",
-  "tryIt": "try it",
-  "tangibleDesc": "A digital gallery space for direct interaction with thought experiments, providing a dynamic environment for exploration and contemplation.",
-  "tangibleAltCon": "This project went through many iterations. However, I knew I wanted to emulate an art gallery, with a focus on the presentation of thought experiments. So, I planned to make small scenes with a location marker and an interactive task.",
-  "tangibleAltTech": "In the second iteration, I was more conscientious of what followed after making a decision, which led to animations based on what the counterpart computer-generated action was in each scenario.",
-  "tangibleSum1": "I am an over-thinker, but for the most part, it is because I like thinking. I wanted to use this project to share a part of what I like and to create a space for you to think about various things as well. This project is an interactive website with 3D elements that showcase 4 thought experiments and allow for people to act upon the decision presented in each thought experiment prompt.",
-  "tangibleSum2": "Traveling past the introductory foyer, you will come across an onboarding experience demonstrated through the Dictator Game. Upon completion, I invite you to freely navigate to areas presenting the Volunteer Dilemma, Exchange Game, and Trust Game. In each area, a floating diamond will be your point of contact, revealing the area’s respective thought experiment prompt and relaying instructions on completing the corresponding interactive component.",
-  "tangibleSum3": "The goal of this project is to make the experience of thought experiments more engaging by improving the tangibility of values upheld whilst thinking through the various scenarios. The implementations I have made are centered around adding interactivity to conventionally written text, using technology to showcase this experience visually in a digital realm and representing decisions made with actions taken. In making values more tangible, hope to inspire reflection on what people care about and possible reasons behind their actions.",
-  "tangibleCon1": "Why do I do the things I do? I deeply contemplate the motivations behind my behavior as a means of understanding myself, whether it’s an execution of values, an impulse of emotions, or a response to situational factors. These motives communicate both identity and tendencies, offering insights into the temporality of each passing state in which I exist. As such, I was happy to make a small part of that process - viewing actions as a window to our thoughts and feelings - a part of my project and share the same musings with other people.",
-  "tangibleCon2": "I find particular interest in experimental games and thought dilemmas because they consist of base units of logic applicable across various contexts, while also yielding insights about a person in a light-hearted, hypothetical presentation. The controlled environment that thought experiments are depicted in minimizes the impact of situational factors and other persuasive contexts have on decision making. As a result, such decisions more closely represent our internal beliefs and typically take the form of an action in a situation.",
-  "tangibleCon3": "However, the focus of the project, more broadly, is making the experience people have when engaging with thought experiments more robust. The implementations I have made to improve engagement are centered around adding interactivity to conventionally written text, using technology to showcase this experience visually in a digital realm and representing decisions made with actions taken. Through improving the tangibility of actions, these efforts give some tangibility to values upheld when thinking through the scenarios presented.",
-  "tangibleTech": "This project is written in React Three Fiber and uses the React Three Rapier physics library. Animations are handled with GSAP. The loading screen was written in GLSL. Set in a 3rd person viewpoint, keyboard controls will be the primary method of engagement in this experience, along with some mouse interactivity."
+  "general": {
+    "role": "designer / developer",
+    "nyc": "NYC,",
+    "home": "home",
+    "projects": "projects",
+    "about": "about",
+    "homeScholar": "A scholar to the core, my boundless curiosity for understanding the intricacies of <b>human behavior</b> has been constant throughout all stages of my life.",
+    "homeCreative": "Currently, it has led me to become a creative technologist that uses digital interactivity to explore <b>motivation and decision making</b>.",
+    "homeProjects": "My latest projects have been centered on <b>communication of beliefs</b>.",
+    "homeHobbies": "You can also find me exploring various art forms (currently, wheel throwing), indulging my pup with back scratches, or connecting with my siblings virtually over game nights.",
+    "nyu": "NYU Tisch",
+    "itp": "Interactive Telecommunication MPS",
+    "unc": "UNC-CH",
+    "psyc": "Psychology BS",
+    "phil": "Philosophy BA",
+    "ling": "Linguistics Minor",
+    "coding": "coding",
+    "softwares":"softwares",
+    "codedIn": "Designed in Figma and developed by me using Visual Studio Code. Built with React Three Fiber, animated with Framer Motion and Greensock Animation Platform. Routed with React Router and deployed via GitHub Pages. Typography includes the Roboto and Roboto Mono typefaces.",
+    "creativeCoding": "creative coding",
+    "interactive": "interactive",
+    "tryIt": "try it",
+    "context":"Context",
+    "technicalDetails": "Technical Details",
+    "pet": "pet: tobi",
+    "cook": "hobby: cooking"
+  },
+  "project": {
+    "tangibleValues": {
+      "title": "tangible values",
+      "description": "A digital gallery space for direct interaction with thought experiments, providing a dynamic environment for exploration and contemplation.",
+      "altTextContext": "This project went through many iterations. However, I knew I wanted to emulate an art gallery, with a focus on the presentation of thought experiments. So, I planned to make small scenes with a location marker and an interactive task.",
+      "altTextTechnical": "In the second iteration, I was more conscientious of what followed after making a decision, which led to animations based on what the counterpart computer-generated action was in each scenario.",
+      "summary": "I am an over-thinker, but for the most part, it is because I like thinking. I wanted to use this project to share a part of what I like and to create a space for you to think about various things as well. This project is an interactive website with 3D elements that showcase 4 thought experiments and allow for people to act upon the decision presented in each thought experiment prompt.<br /><br />Traveling past the introductory foyer, you will come across an onboarding experience demonstrated through the Dictator Game. Upon completion, I invite you to freely navigate to areas presenting the Volunteer Dilemma, Exchange Game, and Trust Game. In each area, a floating diamond will be your point of contact, revealing the area’s respective thought experiment prompt and relaying instructions on completing the corresponding interactive component.<br /><br />The goal of this project is to make the experience of thought experiments more engaging by improving the tangibility of values upheld whilst thinking through the various scenarios. The implementations I have made are centered around adding interactivity to conventionally written text, using technology to showcase this experience visually in a digital realm and representing decisions made with actions taken. In making values more tangible, hope to inspire reflection on what people care about and possible reasons behind their actions.",
+      "context": "Why do I do the things I do? I deeply contemplate the motivations behind my behavior as a means of understanding myself, whether it’s an execution of values, an impulse of emotions, or a response to situational factors. These motives communicate both identity and tendencies, offering insights into the temporality of each passing state in which I exist. As such, I was happy to make a small part of that process - viewing actions as a window to our thoughts and feelings - a part of my project and share the same musings with other people.<br /><br />I find particular interest in experimental games and thought dilemmas because they consist of base units of logic applicable across various contexts, while also yielding insights about a person in a light-hearted, hypothetical presentation. The controlled environment that thought experiments are depicted in minimizes the impact of situational factors and other persuasive contexts have on decision making. As a result, such decisions more closely represent our internal beliefs and typically take the form of an action in a situation.<br /><br />However, the focus of the project, more broadly, is making the experience people have when engaging with thought experiments more robust. The implementations I have made to improve engagement are centered around adding interactivity to conventionally written text, using technology to showcase this experience visually in a digital realm and representing decisions made with actions taken. Through improving the tangibility of actions, these efforts give some tangibility to values upheld when thinking through the scenarios presented.",
+      "technical": "This project is written in React Three Fiber and uses the React Three Rapier physics library. Animations are handled with GSAP. The loading screen was written in GLSL. Set in a 3rd person viewpoint, keyboard controls will be the primary method of engagement in this experience, along with some mouse interactivity."
+    },
+    "socialTrolley": {
+      "title": "the social trolley",
+      "description": "A web experience that explores 3 social situations with a utilitarian and deontological framework modeled after the Trolley Problem.",
+      "altTextContext": "Each social situation examines various challenges to collaboration across different types of relationships. Drawing references from Jira, Apple Messages, and Microsoft Outlook, I wanted to emphasize the social aspect with digital environments characteristic of modern interactions.",
+      "altTextTechnical": "The first situation prompts how exploitation, fair distribution, and responsibility are handled in workplace dynamics. The second situation probes at rejection, judgement, and trust in interpersonal relationships. The third situation examines honesty and blue lies against ingroup and outgroup identification.",
+      "summary": "The Social Trolley is a web experience that explores three social situations that are modeled after the Trolley Problem thought experiment by Philippa Foot (1967). Using a utilitarian and deontological framework, a decision is prompted in response to the presented contextual information. The experience prefaces with a simplified narration of the Trolley Problem and debriefs with the conceptualization of each social situation. Wrapped in y2k retro windows with homage to pixel art detailing, various challenges to collaboration and causes of conflict are presented across different stages of interpersonal relationships.",
+      "context": "This project aims to investigate the connection between our social principles and moral beliefs. Specifically, I am curious as to whether our reasons for acting in social situations are similar to how we would act in moral situations and uncovering if our social principles even have moral underpinnings. In the experience, social acceptability of one action over another is evaluated while engaging with one’s own social principles in decision making.",
+      "technical": "This project is written in p5.js and uses the p5.play physics library. The primary form of engagement is through mouse interaction."
+    },
+    "howAreYou": {
+      "title": "how are you",
+      "description": "A short exchange of small talk with a doorman inside an elevator as you wait to reach your floor. “Hi, how are you?” “I’m good, how are you?”",
+      "altTextContext": "I was inspired by my professor’s quip about touring an apartment once that had a doorman in the elevator and centered the project’s imagery around an elevator operator. The main image was generated through Pixlr with a text prompt and isometric art style preset.",
+      "altTextTechnical": "Starting out, my project was a mash up of three different text analyzing processes. However, the interaction design started following a story, and I even found myself curious about what was going on behind the visual. Thus, a thought bubble served as a connection point between the displayed chat and chat generation.",
+      "summary": "This project begins with the scene of an AI generated image of a doorman inside an elevator prompting you, “How are you?” The scene includes a thought bubble, revealing what the doorman is thinking, as well as 3 interaction buttons, “Respond,” “Follow-Up,” and “Ignore.” When choosing to respond to the doorman, a text field will pop up with notes that reflect your inner thoughts. In this case, “The doorman just asked you how you are. Gotta say something now…” After the initial exchange passes, you can follow-up, where your inner monologue is saying “Quick ! Give another response, how else are you doing? Keep the convo going :&lt;”. Alternatively, you can opt to say nothing and ignore the doorman all together, where you “Pretend you don’t hear anything and there’s no one else here. Go to push an elevator button →”.<br /><br />In the response route, the doorman also relays how they are doing. That response is generated with markov chains from past responses and reformatted with a large language model (LLM). The generated markov is displayed as the thought behind what they say in their chat bubble, which is the LLM reformatting. In the follow-up action, the doorman sympathizes by revealing other people that may feel similarly to how you are feeling. That response is created with retrieval augmented generation that searches through past responses and finds one most similar to yours via embedding. The last option, ignore, will cluster all past responses based on embedding similarity as elevator buttons you can hover or click on. Throughout the experience, the doorman’s thought bubble serves as a window to the inner workings behind the doorman’s generated behavior.",
+      "context": "Something notable about living in New York and common across the two apartment buildings I’ve lived in thus far are doormen. Since interacting with them, I’ve become increasingly conscious of the question, “how are you?” and other similar courtesy greetings. With feelings of being put on the spot, my awareness of “how are you” is the inspiration for this project.<br /><br />Specifically, I am interested in the way people respond. Do people respond with more than “I’m good”? Are responses acts of acknowledgments, presentations of an artificial front or maintenance of a boundary, or genuine snippets of their day? When expressing themselves, is the focus on negatives, positive, unexpected, or salient moments?<br /><br />This project is a playful and casual exchange of greetings that appeal to audience members who, like me, are curious and even unsure of how to answer such a question.",
+      "technical": "This project is written in with express in node.js. Responses are reformatted with the llama-2-7b-chat API from Replicate. Retrieval is conducted with the nateraw/bge-large-en-v1.5 model and Transformers.js from Hugging Faces. The primary form of engagement is through mouse and key input."
+    },
+    "gallery": {
+      "title": "gallery",
+      "description": "A brief overview of additional projects."
+    }
+  },
+  "galleryProject": {
+    "populationFlocking": {
+      "title":"population flocking",
+      "description":"A self propagating visual of stars flocking, growing and dying inspired by Craig Reynold's Flocking Simulation, John Horton Conway's Game of Life, and genetic algorithms.<br /><br />At first stars populate the screen randomly. Then they begin to form clusters, flocking, or moving, together. If there are too many stars in a group, that group faces overpopulation and each star in that group is more inclined to separate from the group. However, if there are too few stars in a group, the group is in a state of underpopulation, where each star is more drawn to its surrounding stars.<br /><br />Each star also has a life force, decreasing when in a state of over or under population and increasing when in a stable population group over time. If the star is at full health for a duration of time, a new star will be born near it. However, if the star loses all its health, the star burns out and dies.<br /><br />Overtime, the stars also learn how much to navigate between population states better, as long lasting stars pass on information to new generations about how much to separate from an overpopulated group and how to better find other stars when underpopulated.<br /><br />I have always been interested in studying human behavior, so I was immediately drawn to these concepts that revolved around breaking down and simulating different behavior that we see. The game of life involved rather simple rules that produces robust and captivating results that are self propagating and cyclic in nature. The rules capture a self correcting dynamic or population levels and with how flexible the rules are structured, it seemed plausible to broaden the relationship to include other elements from human behavior. Subsequently, this project is an endeavor to such explorations."
+    },
+    "movingGradient": {
+      "title":"moving gradient",
+      "description":"A visual installation that responds to the detection of people walking by and their location as they move. Sets of 3 particles are created for each person and changes color, while even following the individual, according to where they are in space. The result is a harmonizing gradient of color that depicts the independent interactions between different individuals.<br /><br />Moving Gradient is inspired by the interplay of two previous projects, relating to changing a linear gradient and processing segments of the gradient to project a synthesized color and corresponding music note. From this combination, I became interested in how an interaction could be formed when two people are separately interacting with different objects. For this project, I was motivated to look at the greater feedback loop of interactions facilitated by our environment in a more playful way."
+    },
+    "stainedGlass": {
+      "title":"stained glass",
+      "description":"A simulation of light particles passing through stained glass, emulating streams of color, before eventually fading out of vision.<br /><br />Particles stream out from an emitter at an interval rate before a seeking force is applied that steers the particles towards the nearest detected glass pannel. Upon intersection, the particles acquire the same color as the glass pannel and begin decreasing their lifespan and eventually fading out."
+    },
+    "grayscaleFilter": {
+      "title":"grayscale filter",
+      "description":"A luminance grayscale with contrast and sobel edge detection that detected against a combination of red and green values.<br /><br />I also wanted to add color back into the visual through interactivity. So, with a mouse drag, a radius of fragments are colored with the original camera colors."
+    },
+    "nypdBot": {
+      "title":"NYPD bot",
+      "description":"A visual journalism article about the New York Police Department K5 Robot, with the main intention of demonstrating a potential interaction someone would have with the robot in reporting an incident. After highlighting functional features of the robot, a synopsis of public sentiment is commented and remarks are made about common concerns regarding the robot."
+    },
+    "inFridge": {
+      "title":"infridge",
+      "description":"A mobile app that aids home cooks in decreasing food waste and practice food safety by providing information on proper food storage and tracking shelf life and household inventory.<br /><br />A problem cooks face at home is frequent food spoilage due to improper food storage. When seemingly fresh produce goes bad within a week, it’s a constant challenge to preserve the freshness of ingredients, raising concerns of produce going bad before it could be used. This challenge proves especially difficult for people living alone or in food desserts. By helping people who cook at home store food properly and track the shelf life of food they have stored, we will decrease the amount of food wasted in consumer homes."
+    },
+    "fishLanterns": {
+      "title":"fish lanterns",
+      "description":"An anthropomorphization of a parade of fish lanterns swimming across the screen.<br /><br />Inpsired by fish lanterns decoratively hung from the ceiling and held by cheerful patrons in night markets or festivals, I created a similar centerpiece of a hollow 3D model with a wireframe skeleton and flickering flame inside that bobs along the lanterns dancing beside it. Similar fish lanters of various sizes begin to float across, illuminated by a rainbow of lights."
+    },
+    "flockingParticles": {
+      "title":"flocking particles",
+      "description":"A glsl implementation of Craig Reynold's Flocking Behavior in 3D using GPU computing with a point cloud.<br /><br />In this sketch, particles flock together, simulating flocking behavior commonly seen in birds. The flocking behavior is a combination of 3 steering forces: alignment, cohesion, and separation. I have included sliders to visualize differing weights of each force, as well as to provide an opportunity to see the forces isolated."
+    },
+    "ethicsExpress": {
+      "title":"ethics express",
+      "description":"A 3D model of a californian trolley replicating The Ethics Express trolley used in The Good Place."
+    }
+  }
 }
